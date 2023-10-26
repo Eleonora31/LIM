@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Body*/
+body{
+    font-family: 'Alata';
+    font-size: 22px;
+    background-image:url("background.jpg");  
+    width: 100%;
+    height: 100vh;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BOX TRASPARENTE*/
+.BLACKBOX{
+    position: relative;
+    width: 1300px;
+    height: 900px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    bottom: 50px;
+}
+
+.BLACKBOX::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    z-index:-1;
+}
+
+.BLACKBOX .logo-titolo{
+    text-align: center;
+    line-height: 70px;
+}
+
+/*Header*/
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 105px;
+}
+
+.logo-titolo{
+    display: block;
+    font-size: 35px;
+    color: rgb(44, 224, 41);
+}
+
+/*Nav*/
+.click{
+    display: block;
+    text-align: center;
+    background-color: rgb(44, 224, 41);
+    padding: 5px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-bottom: 10px;
+}
+
+/*Main*/
+
+span{
+    font-size: 25px;
+}
+
+.Monopattini{
+    margin: auto;
+    margin-left: 120px;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 25%;
+    color: #fff;
+}
+
+.box1{
+    width: 350px;
+    height: 20px;
+    border: 5px solid rgb(255, 194, 80);
+    background-color: rgb(255, 194, 80);
+    border-radius: 5px;
+}
+
+.box2{
+    width: 600px;
+    height: 20px;
+    border: 5px solid rgb(44, 224, 41);
+    background-color: rgb(44, 224, 41);
+    border-radius: 5px;
+}
+
+.box3{
+    width: 150px;
+    height: 20px;
+    border: 5px solid rgb(225, 64, 64);
+    background-color: rgb(225, 64, 64);
+    border-radius: 5px;
+}
+
+.rue{
+    font-size: 15px;
+    margin: 5px;
+}
+
